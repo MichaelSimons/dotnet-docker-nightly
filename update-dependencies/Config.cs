@@ -14,7 +14,7 @@ namespace Dotnet.Docker.Nightly
         private Lazy<string> _password = new Lazy<string>(() => GetEnvironmentVariable("GITHUB_PASSWORD"));
 
         private Lazy<string> _cliBranch = new Lazy<string>(() => GetEnvironmentVariable("CLI_BRANCH"));
-        private Lazy<string> _gitHubUpstreamOwner = new Lazy<string>(() => GetEnvironmentVariable("GITHUB_UPSTREAM_OWNER", "dotnet"));
+        private Lazy<string> _gitHubUpstreamOwner = new Lazy<string>(() => GetEnvironmentVariable("GITHUB_UPSTREAM_OWNER", "MichaelSimons"));
         private Lazy<string> _gitHubProject = new Lazy<string>(() => GetEnvironmentVariable("GITHUB_PROJECT", "dotnet-docker-nightly"));
         private Lazy<string> _gitHubUpstreamBranch = new Lazy<string>(() => GetEnvironmentVariable("GITHUB_UPSTREAM_BRANCH", "master"));
         private Lazy<string[]> _gitHubPullRequestNotifications = new Lazy<string[]>(() =>
